@@ -1,14 +1,14 @@
-const WeatherData = (props) => {
+const WeatherData = ({ day, conditions, time }) => {
   return (
     <>
-      <h2>{props.day}</h2>
+      <h2>{day}</h2>
       <p>
         <span>conditions: </span>
-        {props.conditions}
+        {conditions}
       </p>
       <p>
         <span>time: </span>
-        {props.time}
+        {time}
       </p>
     </>
   );

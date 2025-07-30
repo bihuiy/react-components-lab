@@ -20,15 +20,11 @@ import WeatherData from "./WeatherData";
   );
 }; */
 
-const Weather = (props) => {
+const Weather = ({ img, imgAlt, day, conditions, time }) => {
   return (
     <div className="weather">
-      <WeatherIcon img={props.img} alt={props.imgAlt} />
-      <WeatherData
-        day={props.day}
-        conditions={props.conditions}
-        time={props.time}
-      />
+      <WeatherIcon img={img} alt={imgAlt} />
+      <WeatherData day={day} conditions={conditions} time={time} />
     </div>
   );
 };
