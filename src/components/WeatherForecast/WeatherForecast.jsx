@@ -3,9 +3,10 @@ import WeatherIcon from "./WeatherIcon";
 import WeatherData from "./WeatherData";
 
 /* const Weather = (props) => {
+  console.log(props) // make sure console.log() is outside of the return statement.
   return (
     <div className="weather">
-      {console.log({props})}
+      
       <h2>{props.day}</h2>
       <img src={props.img} alt={props.imgAlt} />
       <p>
